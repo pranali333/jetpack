@@ -11,7 +11,7 @@ import { InnerBlocks } from '@wordpress/block-editor';
  * Internal dependencies
  */
 import './editor.scss';
-import JetpackContactForm from './components/jetpack-contact-form';
+import edit from './edit';
 import JetpackField from './components/jetpack-field';
 import JetpackFieldTextarea from './components/jetpack-field-textarea';
 import JetpackFieldCheckbox from './components/jetpack-field-checkbox';
@@ -92,7 +92,7 @@ export const settings = {
 		},
 	},
 
-	edit: JetpackContactForm,
+	edit,
 	save: () => <InnerBlocks.Content />,
 	example: {
 		attributes: {

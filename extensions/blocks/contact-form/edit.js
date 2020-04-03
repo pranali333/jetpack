@@ -21,9 +21,9 @@ import { InnerBlocks, InspectorControls, URLInput } from '@wordpress/block-edito
 /**
  * Internal dependencies
  */
-import HelpMessage from '../../../shared/help-message';
-import renderMaterialIcon from '../../../shared/render-material-icon';
-import SubmitButton from '../../../shared/submit-button';
+import HelpMessage from '../../shared/help-message';
+import renderMaterialIcon from '../../shared/render-material-icon';
+import SubmitButton from '../../shared/submit-button';
 
 const ALLOWED_BLOCKS = [
 	'jetpack/markdown',
@@ -47,7 +47,7 @@ const ALLOWED_BLOCKS = [
 	'core/video',
 ];
 
-class JetpackContactForm extends Component {
+class ContactFormEdit extends Component {
 	constructor( ...args ) {
 		super( ...args );
 		this.onChangeSubject = this.onChangeSubject.bind( this );
@@ -313,4 +313,4 @@ class JetpackContactForm extends Component {
 	}
 }
 
-export default compose( [ withInstanceId ] )( JetpackContactForm );
+export default compose( [ withInstanceId ] )( ContactFormEdit );
